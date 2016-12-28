@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?define ProductName = "ECR" ?>
+<?define ProductManufacturer = "HelpMicro" ?>
+<?define ProductCode = "3B820F10-BFCC-4495-A9A5-3192116DAC17" ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="SetupProjectWIX" Language="1033" Version="1.0.0.0" Manufacturer="$(var.ProductManufacturer)" UpgradeCode="d00aa271-8f44-48ff-83ec-7014ac09c9f0">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="SetupProjectWIX" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+    
+  </Product>
+  
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="$(var.ProductManufacturer)" />
+			</Directory>
+      <Directory Id="ProgramMenuFolder" />
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+    <Icon Id="icon.ico" SourceFile="$(var.ECR.TargetDir)logo.ico" />
+    
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <ComponentGroupRef Id="ConfigurationUtilityComponents"/>
+			<Component Id="ProductComponent">
+        <File Source="$(var.ECR.TargetPath)" />
+        <Shortcut Id="ECRShortcut" Name="ECR" Directory="ProgramMenuFolder" Advertise="yes" Icon="icon.ico" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+  
+  
+  
+</Wix>
