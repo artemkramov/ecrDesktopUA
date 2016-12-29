@@ -144,6 +144,28 @@ namespace ECR.Models
         }
 
         /// <summary>
+        /// Positive integer number validation
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="ruleName"></param>
+        /// <returns></returns>
+        public ValidationResult ValidateUlong(string value, string ruleName)
+        {
+            var response = new ValidationResult();
+            response.success = true;
+            try
+            {
+                float temp = ulong.Parse(value);
+            }
+            catch (Exception)
+            {
+                response.success = false;
+                response.message = errorList["Byte"];
+            }
+            return response;
+        }
+
+        /// <summary>
         /// Count field validation
         /// </summary>
         /// <param name="value"></param>
@@ -157,6 +179,11 @@ namespace ECR.Models
             {
                 if (!String.IsNullOrWhiteSpace(value))
                 {
+                    string[] parts = value.Split('.');
+                    if (parts.Length > 1 && parts[1].Length > 3)
+                    {
+                        throw new Exception();
+                    }
                     CultureInfo ci = (CultureInfo)CultureInfo.CurrentCulture.Clone();
                     ci.NumberFormat.NumberDecimalSeparator = DECIMAL_SEPARATOR;
                     float temp = float.Parse(value, NumberStyles.Float, ci);

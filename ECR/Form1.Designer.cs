@@ -502,7 +502,7 @@
             this.textboxIP.Size = new System.Drawing.Size(292, 26);
             this.textboxIP.TabIndex = 1;
             this.textboxIP.Tag = "Required";
-            this.textboxIP.Text = "http://169.254.186.21";
+            this.textboxIP.Text = "http://169.254.188.190";
             // 
             // labelIP
             // 
@@ -526,6 +526,7 @@
             this.textboxProductName.Size = new System.Drawing.Size(480, 26);
             this.textboxProductName.TabIndex = 1;
             this.textboxProductName.Tag = "Required";
+            this.textboxProductName.Text = "plu_100";
             // 
             // lblProductName
             // 
@@ -597,6 +598,7 @@
             this.textboxProductCount.Size = new System.Drawing.Size(232, 26);
             this.textboxProductCount.TabIndex = 1;
             this.textboxProductCount.Tag = "Count";
+            this.textboxProductCount.Text = "1.000";
             this.textboxProductCount.TextChanged += new System.EventHandler(this.textboxProductCount_TextChanged);
             // 
             // lblProductCount
@@ -620,7 +622,8 @@
             this.textboxProductCode.Name = "textboxProductCode";
             this.textboxProductCode.Size = new System.Drawing.Size(232, 26);
             this.textboxProductCode.TabIndex = 1;
-            this.textboxProductCode.Tag = "Required";
+            this.textboxProductCode.Tag = "Required|Ulong";
+            this.textboxProductCode.Text = "11010101";
             // 
             // lblProductCode
             // 
@@ -668,6 +671,7 @@
             this.textboxProductPrice.Size = new System.Drawing.Size(232, 26);
             this.textboxProductPrice.TabIndex = 1;
             this.textboxProductPrice.Tag = "Required|Price";
+            this.textboxProductPrice.Text = "100";
             this.textboxProductPrice.TextChanged += new System.EventHandler(this.textboxProductPrice_TextChanged);
             // 
             // lblProductPrice
@@ -692,6 +696,7 @@
             this.textboxProductSum.Size = new System.Drawing.Size(232, 26);
             this.textboxProductSum.TabIndex = 1;
             this.textboxProductSum.Tag = "Required|Price";
+            this.textboxProductSum.Text = "100";
             // 
             // lblProductSum
             // 

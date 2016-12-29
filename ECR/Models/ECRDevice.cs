@@ -5,6 +5,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ECR.Models
 {
@@ -91,6 +92,16 @@ namespace ECR.Models
         }
 
         /// <summary>
+        /// Send general payment data
+        /// </summary>
+        /// <param name="payment"></param>
+        /// <returns></returns>
+        public dynamic SendPaymentGeneral(PaymentGeneral payment)
+        {
+            return httpClient.RequestPost("/cgi/chk", payment, false);
+        }
+
+        /// <summary>
         /// Send report by the appropriate type 
         /// </summary>
         /// <param name="reportType"></param>
@@ -171,8 +182,9 @@ namespace ECR.Models
                 ci.NumberFormat.NumberDecimalDigits = 2;
                 return (float)(Math.Truncate(100 * float.Parse(value, NumberStyles.Float, ci)) / 100);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                MessageBox.Show(e.Message);
                 return 0;
             }
         }
@@ -191,7 +203,7 @@ namespace ECR.Models
                     value = "1";
                 }
                 CultureInfo ci = this.GetDefaultCulturalInfo();
-                return (float)Math.Round(float.Parse(value, NumberStyles.Float, ci) * 1000);
+                return (float)Math.Round(float.Parse(value, NumberStyles.Float, ci));
             }
             catch (Exception)
             {

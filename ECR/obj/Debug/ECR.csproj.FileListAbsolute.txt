@@ -36,3 +36,4 @@ E:\DATA(G)\web_ecr_uk\DesktopProgram\ECR\ECR\obj\Debug\ECR.csproj.GenerateResour
 E:\DATA(G)\web_ecr_uk\DesktopProgram\ECR\ECR\obj\Debug\ru\ECR.resources.dll
 E:\DATA(G)\web_ecr_uk\DesktopProgram\ECR\ECR\obj\Debug\ECR.exe
 E:\DATA(G)\web_ecr_uk\DesktopProgram\ECR\ECR\obj\Debug\ECR.pdb
+E:\DATA(G)\web_ecr_uk\DesktopProgram\ECR\ECR\obj\Debug\ECR.csprojResolveAssemblyReference.cache

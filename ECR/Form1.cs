@@ -157,20 +157,23 @@ namespace ECR
                     isPanelValid = false;
                 }
             }
+            var s = "";
             if (isPanelValid)
             {
                 dynamic data = new ExpandoObject();
                 data.Name = textboxProductName.Text;
-                data.Code = textboxProductCode.Text;
+                data.Code = ulong.Parse(textboxProductCode.Text);
                 data.Count = device.ReadCount(textboxProductCount.Text);
                 data.Price = device.ReadPrice(textboxProductPrice.Text);
                 data.Group = ReadComboData(comboGroups);
                 data.Department = ReadComboData(comboDepartments);
                 data.Tax = ReadComboData(comboTaxes);
-                data.Sum = device.ReadPrice(textboxSum.Text);
+                data.Sum = (float)Math.Round(data.Price * data.Count, 2);
+                data.PaymentSum = device.ReadPrice(textboxProductSum.Text);
                 data.PaymentType = ReadComboData(comboProductPaymentTypes);
                 data.Comment = textboxProductComment.Text;
-                MessageBox.Show(data.Tax.ToString());
+                PaymentGeneral payment = new PaymentGeneral(data);
+                device.SendPaymentGeneral(payment);   
             }
         }
 
@@ -298,12 +301,12 @@ namespace ECR
 
         private void textboxProductCount_TextChanged(object sender, EventArgs e)
         {
-            UpdateCurrentSum();
+            //UpdateCurrentSum();
         }
 
         private void textboxProductPrice_TextChanged(object sender, EventArgs e)
         {
-            UpdateCurrentSum();
+            //UpdateCurrentSum();
         }
 
         

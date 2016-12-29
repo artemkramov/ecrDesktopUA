@@ -9,5 +9,6 @@
 	"This field is required": "Поле необхідне для заповнення",
 	"The field must be a number": "Поле має містити число",
 	"Without taxes": "Без ПДВ",
-	"Incorrect field (must be like 10)": "Некоректне значення поля"        
+	"Incorrect field (must be like 10)": "Некоректне значення поля",
+	"The field must be a positive integer number": "Значення поля має бути цілим додатнім числом"	
 }
