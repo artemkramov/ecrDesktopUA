@@ -12,8 +12,9 @@
 		<MediaTemplate />
 
 		<Feature Id="ProductFeature" Title="SetupProjectWIX" Level="1">
-			<ComponentGroupRef Id="ProductComponents" />
-       <ComponentRef Id="ApplicationShortcutDesktop" />
+        
+        <ComponentGroupRef Id="ProductComponents" />
+        <ComponentRef Id="ApplicationShortcutDesktop" />
 		</Feature>
     
   </Product>
@@ -45,20 +46,29 @@
 			<Directory Id="ProgramFilesFolder">
 				<Directory Id="INSTALLFOLDER" Name="$(var.ProductManufacturer)" />
 			</Directory>
-      <Directory Id="ProgramMenuFolder" />
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ProgramMenuFolderData" Name="$(var.ProductManufacturer)">
+           
+        </Directory>
+         
+      </Directory>
 		</Directory>
   
 	</Fragment>
+  
+  
 
 	<Fragment>
+    
     <Icon Id="icon.ico" SourceFile="$(var.ECR.TargetDir)logo.ico" />
     
 		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
       <ComponentGroupRef Id="ConfigurationUtilityComponents"/>
-			<Component Id="ProductComponent">
+			<Component Id="ProductComponent" Guid="$(var.ProductCode)">
+        <CreateFolder Directory="ProgramMenuFolderData" />
         <File Source="$(var.ECR.TargetPath)" />
-        <Shortcut Id="ECRShortcut" Name="ECR" Directory="ProgramMenuFolder" Advertise="yes" Icon="icon.ico" />
-        
+        <Shortcut Id="ECRShortcut" Name="$(var.ProductName)" Directory="ProgramMenuFolderData" Advertise="yes" Icon="icon.ico" />
+                
 			</Component>
 		</ComponentGroup>
 	</Fragment>
