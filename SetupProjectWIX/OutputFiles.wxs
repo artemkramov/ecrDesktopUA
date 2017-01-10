@@ -7,10 +7,10 @@
     </Fragment>
     <Fragment>
         <ComponentGroup Id="ConfigurationUtilityComponents">
-            <Component Id="cmp520088652AD9F17E0800A9DEF4FDA311" Directory="INSTALLFOLDER" Guid="1DE419EA-D417-47EB-A456-35864C4A9627">
+            <Component Id="cmp520088652AD9F17E0800A9DEF4FDA311" Directory="INSTALLFOLDER" Guid="32A305F9-35FD-4610-AE77-C4C2DEFF6394">
                 <File Id="fil79FDEBB3983A5E618EDF09A22D364C2B" KeyPath="yes" Source="$(var.ECR.TargetDir)\dictionary.json" />
             </Component>
-            <Component Id="cmpBE2682328C9B3593E1B6E780B8ED1442" Directory="INSTALLFOLDER" Guid="EAB2DBA0-25E0-4071-9DC9-CEC5C72DCA90">
+            <Component Id="cmpBE2682328C9B3593E1B6E780B8ED1442" Directory="INSTALLFOLDER" Guid="20473D6E-614D-431A-B0E4-C5D7E41D33B0">
                 <Class Id="{0DC5D869-251A-30BE-AA40-3B401E5764C2}" Context="InprocServer32" Description="Dynamitey.DynamicObjects.Dummy" ThreadingModel="both" ForeignServer="mscoree.dll">
                     <ProgId Id="Dynamitey.DynamicObjects.Dummy" Description="Dynamitey.DynamicObjects.Dummy" />
                 </Class>
@@ -114,37 +114,37 @@
                 <RegistryValue Root="HKCR" Key="Record\{1A51CE35-AADF-3020-B956-E1196C4E9E38}\1.0.2.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
                 <RegistryValue Root="HKCR" Key="Record\{1A51CE35-AADF-3020-B956-E1196C4E9E38}\1.0.2.0" Name="CodeBase" Value="file:///[#fil0431A42F084C8CFAEA0F3E8040DB4DD3]" Type="string" Action="write" />
             </Component>
-            <Component Id="cmpAE50E15E28B4B7B63484D296FB35BB6C" Directory="INSTALLFOLDER" Guid="99173C7D-D0BC-498A-9AD1-6C794DD1EC9D">
+            <Component Id="cmpAE50E15E28B4B7B63484D296FB35BB6C" Directory="INSTALLFOLDER" Guid="40A76544-5D69-4FE2-A07A-BA0891E1A5D5">
                 <File Id="fil12A4CC0660539A372789BEC18DB52EBB" KeyPath="yes" Source="$(var.ECR.TargetDir)\Dynamitey.pdb" />
             </Component>
-            <Component Id="cmp442FE9A0B3716CD14023D289694987D2" Directory="INSTALLFOLDER" Guid="537CB16D-E1EB-43D4-9C3C-6F2C400FCB20">
+            <Component Id="cmp442FE9A0B3716CD14023D289694987D2" Directory="INSTALLFOLDER" Guid="1F02CB8B-E2FF-4A80-839A-1EC0EF150DD2">
                 <File Id="fil2F6F6B17754D368FBD54B01A464949A5" KeyPath="yes" Source="$(var.ECR.TargetDir)\Dynamitey.xml" />
             </Component>
-            <Component Id="cmp684D0C8C2FAFAFFF10330BF07B339CE6" Directory="INSTALLFOLDER" Guid="83CC8122-EAE6-43E4-BC83-1E5281CC069E">
+            <Component Id="cmp684D0C8C2FAFAFFF10330BF07B339CE6" Directory="INSTALLFOLDER" Guid="B78EB60B-3806-4E73-A15A-CEB604CC7F70">
                 <File Id="filDB8726E2682AE0BCF3A14B4E405E7D6F" KeyPath="yes" Source="$(var.ECR.TargetDir)\ECR.BootstrapperCore.config" />
             </Component>
-            <Component Id="cmp5FE1D9D66F507AA458CA630233815DF4" Directory="INSTALLFOLDER" Guid="ECCE553D-7479-4F12-9B17-71C5F737AB13">
+            <Component Id="cmp5FE1D9D66F507AA458CA630233815DF4" Directory="INSTALLFOLDER" Guid="349675CC-DBD4-4806-B508-E131D8208FA1">
                 <File Id="fil84DDDC9B04DBCCEA63B49125C30CB04D" KeyPath="yes" Source="$(var.ECR.TargetDir)\ECR.exe" />
             </Component>
-            <Component Id="cmp9FC2F0C8A937A100BBF51C443E413743" Directory="INSTALLFOLDER" Guid="D7290F84-EBA4-4223-82F7-C0BBF4E83D56">
+            <Component Id="cmp9FC2F0C8A937A100BBF51C443E413743" Directory="INSTALLFOLDER" Guid="765ECA73-93BF-4945-B3F5-EFA003DF47C4">
                 <File Id="fil6264D856B028B64A69DDE59A7E820F2D" KeyPath="yes" Source="$(var.ECR.TargetDir)\ECR.exe.config" />
             </Component>
-            <Component Id="cmpB8BA59EE160DA2C109C80D40B6498AE3" Directory="INSTALLFOLDER" Guid="7317185E-6557-4F10-AB00-32D81855B53A">
+            <Component Id="cmpB8BA59EE160DA2C109C80D40B6498AE3" Directory="INSTALLFOLDER" Guid="892EB2EE-83DB-4006-B604-1DFACFDEB26A">
                 <File Id="filB51757C248C5EBE9089542AED0C2A41A" KeyPath="yes" Source="$(var.ECR.TargetDir)\ECR.pdb" />
             </Component>
-            <Component Id="cmp61E6C0DAA0DA4910E01BB9645F178A2C" Directory="INSTALLFOLDER" Guid="8D854175-593A-4919-9F50-76D499BB6E13">
+            <Component Id="cmp61E6C0DAA0DA4910E01BB9645F178A2C" Directory="INSTALLFOLDER" Guid="1BEFB2BE-2153-4B10-B4AE-350820B4107C">
                 <File Id="fil8B7013A0D530D756C62F22ECB880D4DE" KeyPath="yes" Source="$(var.ECR.TargetDir)\ECR.vshost.exe" />
             </Component>
-            <Component Id="cmp2B5CA491253C301BCEE634A06A7286F6" Directory="INSTALLFOLDER" Guid="E8C8BAE6-8BCC-4909-87A4-F85FEC1300B8">
+            <Component Id="cmp2B5CA491253C301BCEE634A06A7286F6" Directory="INSTALLFOLDER" Guid="F7DDB4BD-7DD7-46AE-887B-24BBF2A07441">
                 <File Id="fil75F6E0C8EBE6F2BB93B70EBDB4068FCD" KeyPath="yes" Source="$(var.ECR.TargetDir)\ECR.vshost.exe.config" />
             </Component>
-            <Component Id="cmp97D7769DDB855CFBA74DCE4662F34C9F" Directory="INSTALLFOLDER" Guid="173471F7-5AD0-4C4C-A690-C3CDDAB6456A">
+            <Component Id="cmp97D7769DDB855CFBA74DCE4662F34C9F" Directory="INSTALLFOLDER" Guid="EB03E7F2-D1FD-4122-A4B8-7ECF93EB084A">
                 <File Id="fil55E5B329C4310894C0FE7EA8B3D35A56" KeyPath="yes" Source="$(var.ECR.TargetDir)\ECR.vshost.exe.manifest" />
             </Component>
-            <Component Id="cmpC92D9566450D2381C819C291B41E2EE8" Directory="INSTALLFOLDER" Guid="840859EF-000E-4F1A-AF36-E89A186E8B99">
+            <Component Id="cmpC92D9566450D2381C819C291B41E2EE8" Directory="INSTALLFOLDER" Guid="EC4401D9-26D7-43D3-8D0B-921F51722697">
                 <File Id="fil3B7D3B0904598A6E39F49D385D9EF1F6" KeyPath="yes" Source="$(var.ECR.TargetDir)\logo.ico" />
             </Component>
-            <Component Id="cmp8D70D98B32C8F908DD58C5F06708F289" Directory="INSTALLFOLDER" Guid="3651DD3C-DD1A-4A35-A4C0-5DD9F5AD282F">
+            <Component Id="cmp8D70D98B32C8F908DD58C5F06708F289" Directory="INSTALLFOLDER" Guid="1A73FAE0-5174-434D-B261-A0E60474F949">
                 <File Id="fil65C3764DFEF4B816AA91E646D63059C1" KeyPath="yes" Source="$(var.ECR.TargetDir)\Microsoft.Threading.Tasks.dll" />
                 <RegistryValue Root="HKCR" Key="Record\{2FAF1D94-0A36-3214-B904-3F98E93A1347}\1.0.12.0" Name="Class" Value="Microsoft.Runtime.CompilerServices.YieldAwaitable" Type="string" Action="write" />
                 <RegistryValue Root="HKCR" Key="Record\{2FAF1D94-0A36-3214-B904-3F98E93A1347}\1.0.12.0" Name="Assembly" Value="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Type="string" Action="write" />
@@ -167,61 +167,61 @@
                 <RegistryValue Root="HKCR" Key="Record\{F973E172-9860-3CC1-B846-723D2F159D0B}\1.0.12.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
                 <RegistryValue Root="HKCR" Key="Record\{F973E172-9860-3CC1-B846-723D2F159D0B}\1.0.12.0" Name="CodeBase" Value="file:///[#fil65C3764DFEF4B816AA91E646D63059C1]" Type="string" Action="write" />
             </Component>
-            <Component Id="cmp1DFBDA5C3F28C07C3DEBDDBAE7F78802" Directory="INSTALLFOLDER" Guid="9BF2FCB8-7442-4501-BAE7-A95B88C4463B">
+            <Component Id="cmp1DFBDA5C3F28C07C3DEBDDBAE7F78802" Directory="INSTALLFOLDER" Guid="B1A62F37-7E03-4B30-8B84-2D4C931117F4">
                 <File Id="fil88E67E79EF1C4E174E3CA55C79D438EF" KeyPath="yes" Source="$(var.ECR.TargetDir)\Microsoft.Threading.Tasks.Extensions.Desktop.dll" />
             </Component>
-            <Component Id="cmp1CEBF83F44FBF4E54F6836267184EBCB" Directory="INSTALLFOLDER" Guid="327C189F-03AA-4C36-A516-AC9E175227F1">
+            <Component Id="cmp1CEBF83F44FBF4E54F6836267184EBCB" Directory="INSTALLFOLDER" Guid="044B8A65-4DDA-4F30-B3BA-8988503DAF0C">
                 <File Id="fil73DE8E4573C49C252AF9BBEB750C3371" KeyPath="yes" Source="$(var.ECR.TargetDir)\Microsoft.Threading.Tasks.Extensions.Desktop.xml" />
             </Component>
-            <Component Id="cmp2BD2CA101B27AF1371B06F4F15D95F9B" Directory="INSTALLFOLDER" Guid="24AC729E-97C8-4C0C-B423-11FB5BB85C0B">
+            <Component Id="cmp2BD2CA101B27AF1371B06F4F15D95F9B" Directory="INSTALLFOLDER" Guid="99D555AB-64BA-4FBF-ABA8-23802A131F84">
                 <File Id="fil477B767EE43BD465EE01C8F343860270" KeyPath="yes" Source="$(var.ECR.TargetDir)\Microsoft.Threading.Tasks.Extensions.dll" />
             </Component>
-            <Component Id="cmpF17FF2B4A4721FA24BEFA74C0309A2F1" Directory="INSTALLFOLDER" Guid="7EE3C054-4F0F-4158-ABBF-E28AE3FA3490">
+            <Component Id="cmpF17FF2B4A4721FA24BEFA74C0309A2F1" Directory="INSTALLFOLDER" Guid="82228A73-E81E-4C42-A2D0-D368944F2721">
                 <File Id="fil34823D88AB36900C40AB3A8E7D4BD88A" KeyPath="yes" Source="$(var.ECR.TargetDir)\Microsoft.Threading.Tasks.Extensions.xml" />
             </Component>
-            <Component Id="cmp70F570FFEF73490225CDC4144CEC292F" Directory="INSTALLFOLDER" Guid="1F731511-7121-41A7-9A68-EA4C7E4DF370">
+            <Component Id="cmp70F570FFEF73490225CDC4144CEC292F" Directory="INSTALLFOLDER" Guid="EA450ACE-A79B-494A-BFA8-7BBF3AF680A7">
                 <File Id="fil8DFD77FF75A79420C9E864EAFB8BD4C3" KeyPath="yes" Source="$(var.ECR.TargetDir)\Microsoft.Threading.Tasks.xml" />
             </Component>
-            <Component Id="cmpBC4FC00A26E7D32479D42D3411317FC5" Directory="INSTALLFOLDER" Guid="17CD266D-94C2-4D0C-8AE6-F4763835B0EE">
+            <Component Id="cmpBC4FC00A26E7D32479D42D3411317FC5" Directory="INSTALLFOLDER" Guid="869EBBFE-361A-4930-98A2-2106233FB777">
                 <File Id="fil90A8AAD9FC612906D405476D61CEA3F4" KeyPath="yes" Source="$(var.ECR.TargetDir)\Newtonsoft.Json.dll" />
             </Component>
-            <Component Id="cmp22E746D6F416E29CB766C7D18764B4B9" Directory="INSTALLFOLDER" Guid="99E06432-DBEA-412D-8408-7DE0E8551756">
+            <Component Id="cmp22E746D6F416E29CB766C7D18764B4B9" Directory="INSTALLFOLDER" Guid="360DC236-0C9B-4A79-8509-40EDCC926ACF">
                 <File Id="filCDAFB89F0B81C3E6CC5A00DBBB38E11F" KeyPath="yes" Source="$(var.ECR.TargetDir)\Newtonsoft.Json.pdb" />
             </Component>
-            <Component Id="cmp125C379E185231EFADA4CB4301BD0A9E" Directory="INSTALLFOLDER" Guid="260D5E33-A43A-49DD-959D-6D1F18550FCF">
+            <Component Id="cmp125C379E185231EFADA4CB4301BD0A9E" Directory="INSTALLFOLDER" Guid="6058B4D2-F26D-4AB4-A0BB-F24BAEE14FE6">
                 <File Id="fil3A2F44A7730E98D18E0948B3261DFABD" KeyPath="yes" Source="$(var.ECR.TargetDir)\Newtonsoft.Json.xml" />
             </Component>
-            <Component Id="cmp06E205989506C503C7B11F6FE4B449C6" Directory="INSTALLFOLDER" Guid="4B75C344-58DA-4DD9-9412-3AE3803F6CCE">
+            <Component Id="cmp06E205989506C503C7B11F6FE4B449C6" Directory="INSTALLFOLDER" Guid="A13E1073-360D-48D4-AC06-67255B870DF2">
                 <File Id="fil1585A04883FF89B289FC2454E8EDC783" KeyPath="yes" Source="$(var.ECR.TargetDir)\System.IO.dll" />
             </Component>
-            <Component Id="cmp29F939233941398174AE650F10917EE2" Directory="INSTALLFOLDER" Guid="4BF01496-0D53-46CE-AA5F-231433280450">
+            <Component Id="cmp29F939233941398174AE650F10917EE2" Directory="INSTALLFOLDER" Guid="B44DE659-5D10-4D6A-BED4-4B52ECB5303C">
                 <File Id="fil60F9BEFA23716E87B5A5BBE1A9D95798" KeyPath="yes" Source="$(var.ECR.TargetDir)\System.IO.xml" />
             </Component>
-            <Component Id="cmpBA5ABAFBBC1B2CC2232B3287ABE89965" Directory="INSTALLFOLDER" Guid="63A7954A-1D46-4795-B204-CA3C3F74D2FA">
+            <Component Id="cmpBA5ABAFBBC1B2CC2232B3287ABE89965" Directory="INSTALLFOLDER" Guid="1EE27AC2-EE9B-48A6-A3B6-2BA6604D86B2">
                 <File Id="fil7D48B04FDEE4653060C375A94010A762" KeyPath="yes" Source="$(var.ECR.TargetDir)\System.Net.Http.dll" />
             </Component>
-            <Component Id="cmp5CBF91F07AFC195A7A5B6006DE491FFF" Directory="INSTALLFOLDER" Guid="FAAC9CD0-B5D9-4C57-9145-06DF20AE825A">
+            <Component Id="cmp5CBF91F07AFC195A7A5B6006DE491FFF" Directory="INSTALLFOLDER" Guid="6D426C6F-E914-41DD-AB5C-79601EE4C8E9">
                 <File Id="filDA6A662B79BB9F3A75FFF1382B78F6E7" KeyPath="yes" Source="$(var.ECR.TargetDir)\System.Net.Http.WebRequest.dll" />
             </Component>
-            <Component Id="cmpAC7F14E01CF7B0339BC7498B004EAB5A" Directory="INSTALLFOLDER" Guid="9D43A583-7926-4CDB-9ADF-2F571F6D9A52">
+            <Component Id="cmpAC7F14E01CF7B0339BC7498B004EAB5A" Directory="INSTALLFOLDER" Guid="AA6D6EEF-D8A2-4562-A87B-62FA443B9F3D">
                 <File Id="filEEA458C8C389DFCE095A6EDEDB33304D" KeyPath="yes" Source="$(var.ECR.TargetDir)\System.Net.Http.WebRequest.xml" />
             </Component>
-            <Component Id="cmp42DCC6F5718EE9E99FD27D6EC4DC8B65" Directory="INSTALLFOLDER" Guid="0C187229-72A5-4B91-AB73-BDBEB73934FD">
+            <Component Id="cmp42DCC6F5718EE9E99FD27D6EC4DC8B65" Directory="INSTALLFOLDER" Guid="1843D52E-A538-430D-BD25-ED1C9B3B79EC">
                 <File Id="filBEC8D8E145CC6BF308933B7C61B08E0A" KeyPath="yes" Source="$(var.ECR.TargetDir)\System.Net.Http.xml" />
             </Component>
-            <Component Id="cmp5535623A0957F12A580F2E0AE9AB7F24" Directory="INSTALLFOLDER" Guid="A2C05DD9-0DAE-4D44-845A-4A252A411E94">
+            <Component Id="cmp5535623A0957F12A580F2E0AE9AB7F24" Directory="INSTALLFOLDER" Guid="1743C0EB-EC6F-4180-A5AC-8197EEF38363">
                 <File Id="fil1F7505072F9E81ACFDD7E6910787823E" KeyPath="yes" Source="$(var.ECR.TargetDir)\System.Runtime.dll" />
             </Component>
-            <Component Id="cmp069F536DD65148B9E0DADDF7F860B86D" Directory="INSTALLFOLDER" Guid="C968FF07-EA18-4E0D-B675-7D51541A5C8B">
+            <Component Id="cmp069F536DD65148B9E0DADDF7F860B86D" Directory="INSTALLFOLDER" Guid="A5974806-34A7-40C6-9541-5B8CA85762E8">
                 <File Id="fil6366DF6D9D8AF01E24128E6663573FDA" KeyPath="yes" Source="$(var.ECR.TargetDir)\System.Runtime.xml" />
             </Component>
-            <Component Id="cmp174FEA916F072AFEF2DC68827B08C208" Directory="INSTALLFOLDER" Guid="F5DCC1BA-D515-4CC4-A320-F1A518D3042C">
+            <Component Id="cmp174FEA916F072AFEF2DC68827B08C208" Directory="INSTALLFOLDER" Guid="805DA1D7-DCDC-4B54-B522-F50AA98BCC0F">
                 <File Id="fil7F3C8D53605A91C20728F321E6100DC4" KeyPath="yes" Source="$(var.ECR.TargetDir)\System.Threading.Tasks.dll" />
             </Component>
-            <Component Id="cmpE2022A5DDEE4638DF06043143814CE16" Directory="INSTALLFOLDER" Guid="4B3C82C1-F4A1-48CD-A5CA-0D72DE2222A4">
+            <Component Id="cmpE2022A5DDEE4638DF06043143814CE16" Directory="INSTALLFOLDER" Guid="47596A69-077E-4C74-B435-CAB4B61F0E1D">
                 <File Id="fil1E7D5F59F3BB9AD60650D47B9BE37AAF" KeyPath="yes" Source="$(var.ECR.TargetDir)\System.Threading.Tasks.xml" />
             </Component>
-            <Component Id="cmp908D7150125803814FB6756142B2F87B" Directory="dirE9205C68F964857267FD3312DBFF9A91" Guid="A6B0B82E-D6C4-45EA-9B8B-4AA4DD3495EA">
+            <Component Id="cmp908D7150125803814FB6756142B2F87B" Directory="dirE9205C68F964857267FD3312DBFF9A91" Guid="5B1D1304-1DB4-4BCD-B426-4A9565788D3F">
                 <File Id="fil310308CB67A91DF476A393E99BEA38A2" KeyPath="yes" Source="$(var.ECR.TargetDir)\ru\ECR.resources.dll" />
             </Component>
         </ComponentGroup>

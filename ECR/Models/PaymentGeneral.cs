@@ -65,6 +65,11 @@ namespace ECR.Models
         private float paymentSum;
 
         /// <summary>
+        /// Comment
+        /// </summary>
+        private string comment;
+
+        /// <summary>
         /// Forms JSON string for server POST query 
         /// </summary>
         /// <returns></returns>
@@ -72,13 +77,14 @@ namespace ECR.Models
         {
             dynamic pData = new ExpandoObject();
             dynamic sData = new ExpandoObject();
+            dynamic cData = new ExpandoObject();
 
             dynamic innerData = new ExpandoObject();
             innerData.code = this.code;
             innerData.name = this.name;
             innerData.qty = this.qty;
             innerData.price = this.price;
-            innerData.sum = this.sum;
+            //innerData.sum = this.sum;
             innerData.dep = this.dep;
             innerData.grp = this.grp;
             innerData.tax = this.tax;
@@ -89,7 +95,11 @@ namespace ECR.Models
             paymentData.sum = this.paymentSum;
             pData.P = paymentData;
 
-            dynamic[] fData = new dynamic[2] { sData, pData };
+            dynamic commentData = new ExpandoObject();
+            commentData.cm = this.comment;
+            cData.C = commentData;
+
+            dynamic[] fData = new dynamic[3] { sData, pData, cData };
 
             dynamic generalData = new ExpandoObject();
             generalData.F = fData;
@@ -113,7 +123,7 @@ namespace ECR.Models
             this.tax = data.Tax;
             this.paymentSum = data.PaymentSum;
             this.paymentNo = data.PaymentType;
-
+            this.comment = data.Comment;
         }
 
         /// <summary>

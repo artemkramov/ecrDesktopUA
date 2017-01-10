@@ -203,7 +203,7 @@ namespace ECR.Models
                     value = "1";
                 }
                 CultureInfo ci = this.GetDefaultCulturalInfo();
-                return (float)Math.Round(float.Parse(value, NumberStyles.Float, ci));
+                return (float)Math.Round(float.Parse(value, NumberStyles.Float, ci), 3);
             }
             catch (Exception)
             {

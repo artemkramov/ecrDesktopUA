@@ -47,6 +47,7 @@
             this.panelProductPaymentType = new System.Windows.Forms.Panel();
             this.panelComment = new System.Windows.Forms.Panel();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.panelBtnPrint = new System.Windows.Forms.Panel();
             this.btnZReport = new ECR.CustomControls.CustomButton();
             this.btnXReport = new ECR.CustomControls.CustomButton();
             this.lblDivider = new ECR.CustomControls.CustomLabel();
@@ -81,9 +82,9 @@
             this.lblProductSum = new ECR.CustomControls.CustomLabel();
             this.comboProductPaymentTypes = new ECR.CustomControls.CustomCombobox();
             this.lblProductPaymentType = new ECR.CustomControls.CustomLabel();
-            this.btnProduct = new ECR.CustomControls.CustomButton();
             this.textboxProductComment = new ECR.CustomControls.CustomTextbox();
             this.lblProductComment = new ECR.CustomControls.CustomLabel();
+            this.btnProduct = new ECR.CustomControls.CustomButton();
             this.tableLayoutPanel.SuspendLayout();
             this.panelPayment.SuspendLayout();
             this.tableLayoutReports.SuspendLayout();
@@ -101,6 +102,7 @@
             this.panelProductPaymentType.SuspendLayout();
             this.panelComment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+            this.panelBtnPrint.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel
@@ -198,8 +200,8 @@
             this.tableLayoutProduct.Controls.Add(this.panelProductPrice, 0, 2);
             this.tableLayoutProduct.Controls.Add(this.panelSum, 0, 4);
             this.tableLayoutProduct.Controls.Add(this.panelProductPaymentType, 1, 4);
-            this.tableLayoutProduct.Controls.Add(this.btnProduct, 0, 6);
             this.tableLayoutProduct.Controls.Add(this.panelComment, 0, 5);
+            this.tableLayoutProduct.Controls.Add(this.panelBtnPrint, 0, 6);
             this.tableLayoutProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutProduct.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutProduct.Name = "tableLayoutProduct";
@@ -321,6 +323,16 @@
             this.errorProvider.BlinkRate = 0;
             this.errorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
             this.errorProvider.ContainerControl = this;
+            // 
+            // panelBtnPrint
+            // 
+            this.tableLayoutProduct.SetColumnSpan(this.panelBtnPrint, 2);
+            this.panelBtnPrint.Controls.Add(this.btnProduct);
+            this.panelBtnPrint.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBtnPrint.Location = new System.Drawing.Point(3, 423);
+            this.panelBtnPrint.Name = "panelBtnPrint";
+            this.panelBtnPrint.Size = new System.Drawing.Size(490, 59);
+            this.panelBtnPrint.TabIndex = 10;
             // 
             // btnZReport
             // 
@@ -735,20 +747,6 @@
             this.lblProductPaymentType.TabIndex = 0;
             this.lblProductPaymentType.Text = "Тип оплати";
             // 
-            // btnProduct
-            // 
-            this.btnProduct.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnProduct.BackColor = System.Drawing.Color.White;
-            this.btnProduct.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnProduct.Location = new System.Drawing.Point(3, 423);
-            this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Size = new System.Drawing.Size(242, 50);
-            this.btnProduct.TabIndex = 10;
-            this.btnProduct.Text = "Run";
-            this.btnProduct.UseVisualStyleBackColor = false;
-            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
-            // 
             // textboxProductComment
             // 
             this.textboxProductComment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -770,6 +768,20 @@
             this.lblProductComment.Size = new System.Drawing.Size(69, 20);
             this.lblProductComment.TabIndex = 0;
             this.lblProductComment.Text = "Коментар";
+            // 
+            // btnProduct
+            // 
+            this.btnProduct.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProduct.BackColor = System.Drawing.Color.White;
+            this.btnProduct.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnProduct.Location = new System.Drawing.Point(7, 0);
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.Size = new System.Drawing.Size(242, 50);
+            this.btnProduct.TabIndex = 10;
+            this.btnProduct.Text = "Друк чеку";
+            this.btnProduct.UseVisualStyleBackColor = false;
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // MainForm
             // 
@@ -810,6 +822,7 @@
             this.panelComment.ResumeLayout(false);
             this.panelComment.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+            this.panelBtnPrint.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -870,6 +883,7 @@
         private System.Windows.Forms.Panel panelComment;
         private CustomControls.CustomLabel lblProductComment;
         private CustomControls.CustomTextbox textboxProductComment;
+        private System.Windows.Forms.Panel panelBtnPrint;
     }
 }
 

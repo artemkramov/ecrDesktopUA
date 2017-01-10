@@ -168,7 +168,7 @@ namespace ECR
                 data.Group = ReadComboData(comboGroups);
                 data.Department = ReadComboData(comboDepartments);
                 data.Tax = ReadComboData(comboTaxes);
-                data.Sum = (float)Math.Round(data.Price * data.Count, 2);
+                data.Sum = 0;
                 data.PaymentSum = device.ReadPrice(textboxProductSum.Text);
                 data.PaymentType = ReadComboData(comboProductPaymentTypes);
                 data.Comment = textboxProductComment.Text;
